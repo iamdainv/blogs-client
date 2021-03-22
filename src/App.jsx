@@ -1,9 +1,11 @@
 import React from 'react';
+import DefaultLayout from 'components/Layout/DefaultLayout';
 function App() {
 	return (
-		<div className='App mt-5'>
+		<DefaultLayout>
+			{' '}
 			App work : hello reactjs version : {React.version}{' '}
-		</div>
+		</DefaultLayout>
 	);
 }
 

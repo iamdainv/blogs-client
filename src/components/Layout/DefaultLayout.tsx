@@ -2,11 +2,15 @@ import Footer from 'components/Footer';
 import Header from 'components/Header';
 import React from 'react';
 
-const DefaultLayout = props => {
+interface IProps {
+	children: React.ReactNode;
+}
+
+const DefaultLayout = ({ children }: IProps) => {
 	return (
 		<>
 			<Header />
-			{props.children}
+			{children}
 			<Footer />
 		</>
 	);

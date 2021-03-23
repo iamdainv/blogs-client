@@ -1,12 +1,13 @@
 import React from 'react';
 import DefaultLayout from 'components/Layout/DefaultLayout';
-function App() {
+
+const Home = () => {
 	return (
 		<DefaultLayout>
 			{' '}
 			App work : hello reactjs version : {React.version}{' '}
 		</DefaultLayout>
 	);
-}
+};
 
-export default App;
+export default Home;

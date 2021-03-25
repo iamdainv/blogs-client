@@ -5,15 +5,16 @@ import React from 'react';
 
 interface IProps {
 	children: React.ReactNode;
+	hasSideBar?: boolean;
 }
 
-const DefaultLayout = ({ children }: IProps) => {
+const DefaultLayout = ({ children, hasSideBar = true }: IProps) => {
 	return (
 		<>
 			<Header />
 			<div className=' flex justify-between md:w-11/12 mx-auto'>
 				<div className='side-bar w-auto py-5 hidden lg:block flex-shrink-0'>
-					<SideBar />
+					{hasSideBar && <SideBar />}
 				</div>
 				<div className='py-2 md:py-5 md:pl-5 md:pr-3 min-w-0 w-full'>
 					{' '}

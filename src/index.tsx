@@ -5,9 +5,11 @@ import './assets/styles/global.scss';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<div className='app'>
+			<App />
+		</div>
 	</React.StrictMode>,
-	document.getElementById('root'),
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

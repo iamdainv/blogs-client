@@ -8,6 +8,11 @@ export const router: RouteProps[] = [
 		component: React.lazy(() => import('container/auth'))
 	},
 	{
+		path: '/submit',
+		exact: true,
+		component: React.lazy(() => import('container/submit/Submit'))
+	},
+	{
 		path: '',
 		exact: false,
 		component: React.lazy(() => import('container/Home/Home'))

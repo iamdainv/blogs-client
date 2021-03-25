@@ -10,7 +10,7 @@ const suffix = (
 	<SearchOutlined
 		style={{
 			fontSize: 16,
-			color: 'rgba(160,174,192,0.9)',
+			color: 'rgba(160,174,192,0.9)'
 		}}
 	/>
 );
@@ -30,7 +30,7 @@ const Header = () => {
 		setSearchText(event.target.value);
 	};
 	return (
-		<nav className='border-b-2 border-fuchsia-600'>
+		<nav className='border-b-2 border-fuchsia-600 bg-white'>
 			<div className='w-11/12 mx-auto flex items-center justify-center py-2'>
 				<p className='font-header text-green-500 text-4xl'>ly cafa</p>
 				<div className='mx-5 flex flex-row'>

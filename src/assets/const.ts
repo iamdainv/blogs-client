@@ -1,166 +1,225 @@
 export const EMAIL_PATTERN = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-export const CATEGORIES = [
+export interface ICategory {
+	label: string;
+	value: number;
+}
+
+export const CATEGORIES: ICategory[] = [
 	{
-		label: 'Bảng tin'
+		label: 'Bảng tin',
+		value: 0
 	},
 	{
-		label: 'Ăn Uống'
+		label: 'Ăn Uống',
+		value: 1
 	},
 	{
-		label: 'Du lichk - Phượt'
+		label: 'Du lichk - Phượt',
+		value: 2
 	},
 	{
-		label: 'Tin tức - Thời sự'
+		label: 'Tin tức - Thời sự',
+		value: 3
 	},
 	{
-		label: 'Chuyện vặt'
+		label: 'Chuyện vặt',
+		value: 4
 	},
 	{
-		label: 'Hài'
+		label: 'Hài',
+		value: 5
 	},
 	{
-		label: 'Reddit'
+		label: 'Reddit',
+		value: 6
 	},
 	{
-		label: 'Quora'
+		label: 'Quora',
+		value: 7
 	},
 	{
-		label: 'Tuổi teen'
+		label: 'Tuổi teen',
+		value: 8
 	},
 	{
-		label: 'Tình yêu - Tình bạn'
+		label: 'Tình yêu - Tình bạn',
+		value: 9
 	},
 	{
-		label: 'Hỏi đáp- Tư vẫn'
+		label: 'Hỏi đáp- Tư vẫn',
+		value: 10
 	},
 	{
-		label: 'Tâm sự - Chuyện đời'
+		label: 'Tâm sự - Chuyện đời',
+		value: 11
 	},
 	{
-		label: 'Ảnh'
+		label: 'Ảnh',
+		value: 12
 	},
 	{
-		label: 'Video'
+		label: 'Video',
+		value: 13
 	},
 	{
-		label: 'Nhạc'
+		label: 'Nhạc',
+		value: 14
 	},
 	{
-		label: 'Phim - TV'
+		label: 'Phim - TV',
+		value: 15
 	},
 	{
-		label: 'Thể thao'
+		label: 'Thể thao',
+		value: 16
 	},
 	{
-		label: 'Sức khỏe - Y tế'
+		label: 'Sức khỏe - Y tế',
+		value: 17
 	},
 	{
-		label: 'Thời trang - Làm đẹp'
+		label: 'Thời trang - Làm đẹp',
+		value: 18
 	},
 	{
-		label: 'Mẹo hay'
+		label: 'Mẹo hay',
+		value: 19
 	},
 	{
-		label: 'Truyền cảm hứng'
+		label: 'Truyền cảm hứng',
+		value: 20
 	},
 	{
-		label: 'Nghệ thuật'
+		label: 'Nghệ thuật',
+		value: 21
 	},
 	{
-		label: 'Nhiếp ảnh'
+		label: 'Nhiếp ảnh',
+		value: 22
 	},
 	{
-		label: 'Đời sống'
+		label: 'Đời sống',
+		value: 23
 	},
 	{
-		label: 'Thủ công - Tự làm'
+		label: 'Thủ công - Tự làm',
+		value: 24
 	},
 	{
-		label: 'Vường - Ao - Chuồng'
+		label: 'Vường - Ao - Chuồng',
+		value: 25
 	},
 	{
-		label: 'Thú Cưng - Động vật'
+		label: 'Thú Cưng - Động vật',
+		value: 26
 	},
 	{
-		label: 'Kinh doanh - Khởi nghiệp'
+		label: 'Kinh doanh - Khởi nghiệp',
+		value: 27
 	},
 	{
-		label: 'Chứng khoán - Kinh tế'
+		label: 'Chứng khoán - Kinh tế',
+		value: 28
 	},
 	{
-		label: 'Xe cộ'
+		label: 'Xe cộ',
+		value: 29
 	},
 	{
-		label: 'Nhà cửa - Nội thất'
+		label: 'Nhà cửa - Nội thất',
+		value: 30
 	},
 	{
-		label: 'Phong thủy'
+		label: 'Phong thủy',
+		value: 31
 	},
 	{
-		label: 'Kiến trúc - Xây dụng'
+		label: 'Kiến trúc - Xây dụng',
+		value: 32
 	},
 	{
-		label: 'Phong cảnh'
+		label: 'Phong cảnh',
+		value: 33
 	},
 	{
-		label: 'Học đường - Giáo dục'
+		label: 'Học đường - Giáo dục',
+		value: 34
 	},
 	{
-		label: 'Truyện tranh'
+		label: 'Truyện tranh',
+		value: 35
 	},
 	{
-		label: 'Sách'
+		label: 'Sách',
+		value: 36
 	},
 	{
-		label: 'Thơ'
+		label: 'Thơ',
+		value: 37
 	},
 	{
-		label: 'Văn - Truyện'
+		label: 'Văn - Truyện',
+		value: 38
 	},
 	{
-		label: 'Ma - Kinh dị'
+		label: 'Ma - Kinh dị',
+		value: 39
 	},
 	{
-		label: 'Bí ẩn'
+		label: 'Bí ẩn',
+		value: 40
 	},
 	{
-		label: 'Lịch sử'
+		label: 'Lịch sử',
+		value: 41
 	},
 	{
-		label: 'Thiên văn - Địa lý'
+		label: 'Thiên văn - Địa lý',
+		value: 42
 	},
 	{
-		label: 'Tôn giáo - Triết học'
+		label: 'Tôn giáo - Triết học',
+		value: 43
 	},
 	{
-		label: 'Từ vi - Số mệnh'
+		label: 'Từ vi - Số mệnh',
+		value: 44
 	},
 	{
-		label: 'Công Nghệ'
+		label: 'Công Nghệ',
+		value: 45
 	},
 	{
-		label: 'Lập trình - Phần mềm'
+		label: 'Lập trình - Phần mềm',
+		value: 46
 	},
 	{
-		label: 'Game'
+		label: 'Game',
+		value: 47
 	},
 	{
-		label: 'Khoa học'
+		label: 'Khoa học',
+		value: 48
 	},
 	{
-		label: 'Kỹ thuật'
+		label: 'Kỹ thuật',
+		value: 49
 	},
 	{
-		label: 'Toán - Lý - Hoá'
+		label: 'Toán - Lý - Hoá',
+		value: 50
 	},
 	{
-		label: 'Việt Nam'
+		label: 'Việt Nam',
+		value: 51
 	},
 	{
-		label: 'Thế giới'
+		label: 'Thế giới',
+		value: 52
 	},
 	{
-		label: 'Etc ...'
+		label: 'Etc ...',
+		value: 53
 	}
 ];
